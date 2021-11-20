@@ -122,9 +122,42 @@ a {
 }
 
 
+/* FOOTER */
+
+.site-footer {
+    background-color: #525E65;
+    color: #DBE8D4;
+    font-family: 'Josefin Sans',    sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+}
+
+
 /* 
 
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 
 */
+
+@media screen and (max-width: 595px) {
+    body {
+        background-color: olive;
+    }
+
+    .logo {
+        padding: 20px 0 0;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .site-nav ul .nav-item:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .site-nav ul {
+        flex-wrap: wrap;
+    }
+}

@@ -42,8 +42,89 @@ a {
 }
 
 
+/* HEADER NAV */
+
+.site-header {
+    background-color: #525E65;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 10px 0 5px;
+}
+
+.logo a {
+    display: flex;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav ul .nav-item {
+    padding: 0 10px;
+}
+
+.site-nav ul .nav-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.site-nav ul .nav-item a {
+    color: #DBE8D4;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 48px;
+}
+
+.site-nav ul .active {
+    border-bottom: 4px solid #73CCA8;
+    padding-top: 4px;
+    line-height: 40px;
+}
+
+.site-nav ul .active a {
+    color: #73CCA8;
+}
+
+.site-nav ul .nav-item:hover {
+    border-bottom: 4px solid #73CCA8;
+    padding-top: 4px;
+    line-height: 40px;
+}
+
+.site-nav ul .nav-item a:hover {
+    color: #73CCA8;
+}
+
+.site-nav ul .nav-item:active {
+    opacity: 0.8;
+}
+
+
 /* MAIN CONTENT */
 
 .main-content {
     flex-grow: 1;
 }
+
+
+/* 
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+
+*/

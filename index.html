@@ -12,56 +12,91 @@
     <meta name="description"
         content="I'm Sanjarbek Saminjonov, a 21-years-old Software Engineer from Fergana, Uzbekistan.">
 
-    <title>Sanjarbek's Blog</title>
+    <title>Sanjarbek Saminjonov | Blog | Resume | Portfolio</title>
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="static/images/favicon.png" type="image/png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Titillium+Web&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
-    
+
     <header class="site-header">
         <nav class="site-nav container">
             <div class="logo">
                 <a href="/">
-                    <img src="images/logo.svg" alt="Sanjarbek's Blog">
+                    <img src="static/images/logo.svg" alt="Sanjarbek's Blog">
                 </a>
             </div>
             <ul>
-                <li class="nav-item">
-                    <a  href="#">Home</a>
-                </li>
                 <li class="nav-item active">
-                    <a  href="#">About</a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a  href="#">Resume</a>
+                    <a href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a  href="#">Blog</a>
+                    <a href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Blog</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main class="main-content">
-
-
-
+        <div class="container main-content__container">
+            <div class="introduce-row">
+                <img class="my-photo" src="static/images/me.jpg" width="140" height="140" alt="Sanjarbek's Photo">
+                <div class="who-am-i">
+                    <h1>Sanjarbek Saminjonov</h1>
+                    <h2>Full-stack developer</h2>
+                    <div class="social-links">
+                        <a target="_blank" href="https://github.com/SanjarbekSaminjonov">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a target="_blank" href="https://t.me/s/sanjarbek_saminjonov">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/sanjarbek-saminjonov">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/sanjarbek.saminjonov">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="little-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="btn-group">
+                    <a class="blog-link" href="#">
+                        Read Blog
+                    </a>
+                    <a class="portfolio-link" href="#">
+                        Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="site-footer">
-        &copy; 2021 Sanjarbek Saminjonov
+    <footer class="site-footer"> 
+        <div class="circle">&copy; 2021 Sanjarbek Saminjonov</div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>

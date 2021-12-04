@@ -1,0 +1,365 @@
+/* GLOBAL */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1060px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER NAV */
+
+.site-header {
+  background-color: #525e65;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  padding: 10px 0 5px;
+}
+
+.logo a {
+  display: flex;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-nav ul .nav-item {
+  padding: 0 10px;
+}
+
+.site-nav ul .nav-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.site-nav ul .nav-item a {
+  color: #dbe8d4;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 48px;
+}
+
+.site-nav ul .active {
+  border-bottom: 4px solid #73cca8;
+  padding-top: 4px;
+  line-height: 40px;
+}
+
+.site-nav ul .active a {
+  color: #73cca8;
+}
+
+.site-nav ul .nav-item:hover {
+  border-bottom: 4px solid #73cca8;
+  padding-top: 4px;
+  line-height: 40px;
+}
+
+.site-nav ul .nav-item a:hover {
+  color: #73cca8;
+}
+
+.site-nav ul .nav-item:active {
+  opacity: 0.8;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: #252b38;
+}
+
+.introduce-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.my-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 10px 0 rgb(0 0 0 / 15%);
+}
+
+.who-am-i {
+  margin-left: 40px;
+}
+
+.who-am-i h1,
+.who-am-i h2 {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.who-am-i h1 {
+  font-size: 45px;
+  line-height: 54px;
+  font-weight: 400;
+  color: #dbe8d4;
+  letter-spacing: 2px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.who-am-i h2 {
+  margin-top: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #a4afa4;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a:not(:last-child) {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-links a i {
+  font-size: 24px;
+  color: #a4afa4;
+}
+
+.social-links a i:hover {
+  opacity: 0.9;
+  color: #1e90ff;
+}
+
+.social-links a i:active {
+  opacity: 0.7;
+}
+
+.little-description {
+  padding-top: 30px;
+}
+
+.little-description p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-group a {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+  border: 1px solid #1e90ff;
+  box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 15%);
+  border-radius: 6px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.btn-group .blog-link {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.btn-group .portfolio-link {
+  color: #1e90ff;
+  margin-left: 15px;
+}
+
+.btn-group .blog-link:hover,
+.btn-group .portfolio-link:hover {
+  opacity: 0.9;
+}
+
+.btn-group .blog-link:active,
+.btn-group .portfolio-link:active {
+  opacity: 0.7;
+}
+
+/* FOOTER */
+
+.site-footer {
+  position: relative;
+}
+
+.site-footer .circle {
+  color: #dbe8d4;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 80px;
+  text-align: center;
+  position: fixed;
+  height: 300px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 100%;
+  bottom: -220px;
+  background-color: #2e3445;
+}
+
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+
+@media screen and (max-width: 595px) {
+  body {
+    background-color: olive;
+  }
+
+  .logo {
+    padding: 20px 0 0;
+  }
+
+  .site-nav {
+    justify-content: space-around;
+  }
+
+  .my-photo {
+    margin-top: 5vh;
+    width: 130px;
+    height: 130px;
+  }
+
+  .main-content {
+    align-items: flex-start;
+  }
+
+  .introduce-row {
+    justify-content: center;
+  }
+
+  .who-am-i {
+    margin-top: 15px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .who-am-i h1 {
+    font-size: 38px;
+  }
+
+  .who-am-i h2 {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+
+  .little-description {
+    padding-top: 10px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .little-description p {
+    margin: 20px 0;
+  }
+
+  .btn-group {
+    margin-top: 25px;
+  }
+
+  .site-footer .circle {
+    height: 200px;
+    bottom: -130px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .site-nav ul .nav-item:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .site-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .site-nav ul .nav-item a {
+    font-size: 14px;
+    line-height: 35px;
+  }
+
+  .my-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .who-am-i h1 {
+      font-size: 24px;
+      line-height: 35px;
+  }
+
+  .who-am-i h2 {
+      font-size: 18px;
+  }
+
+  .social-links a i {
+      font-size: 20px;
+  }
+
+  .little-description p {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 22px;
+  }
+
+  .btn-group a {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}

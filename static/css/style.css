@@ -16,6 +16,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #252b38;
 }
 
 ul {
@@ -118,7 +119,6 @@ a {
   flex-grow: 1;
   display: flex;
   align-items: center;
-  background-color: #252b38;
 }
 
 .introduce-row {
@@ -259,9 +259,6 @@ font-family: 'Titillium Web', sans-serif;
 */
 
 @media screen and (max-width: 595px) {
-  body {
-    background-color: olive;
-  }
 
   .logo {
     padding: 20px 0 0;
@@ -297,12 +294,12 @@ font-family: 'Titillium Web', sans-serif;
 
   .who-am-i h2 {
     font-size: 24px;
-    margin-top: 12px;
+    margin-top: 40px;
   }
 
   .little-description {
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     text-align: center;
   }
 
@@ -340,22 +337,22 @@ font-family: 'Titillium Web', sans-serif;
   }
 
   .who-am-i h1 {
-      font-size: 24px;
-      line-height: 35px;
+    font-size: 24px;
+    line-height: 35px;
   }
 
   .who-am-i h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .social-links a i {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .little-description p {
-      margin-top: 10px;
-      font-size: 14px;
-      line-height: 22px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .btn-group a {

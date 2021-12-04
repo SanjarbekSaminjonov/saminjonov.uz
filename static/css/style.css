@@ -196,6 +196,7 @@ a {
   font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1.5px;
 }
 
 .btn-group a {
@@ -259,6 +260,10 @@ font-family: 'Titillium Web', sans-serif;
 */
 
 @media screen and (max-width: 595px) {
+  .site-nav ul .nav-item a {
+    line-height: 25px;
+    font-size: 16px;
+  }
 
   .container {
     padding: 0 12px;
@@ -266,6 +271,10 @@ font-family: 'Titillium Web', sans-serif;
 
   .logo {
     padding: 20px 0 0;
+  }
+
+  .logo img {
+    height: 25px;
   }
 
   .site-nav {
@@ -310,13 +319,18 @@ font-family: 'Titillium Web', sans-serif;
   }
 
   .little-description {
-    padding-top: 0;
+    padding-top: 15px;
     padding-bottom: 100px;
     text-align: center;
   }
 
   .little-description p {
-    margin: 15px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn-group a {
+    font-size: 14px;
   }
 
   .site-footer .circle {

@@ -116,8 +116,11 @@ a {
 
 /* MAIN CONTENT */
 
-.main-content {
+main {
   flex-grow: 1;
+}
+
+.main-content {
   display: flex;
   align-items: center;
 }
@@ -235,30 +238,28 @@ a {
 
 /* FOOTER */
 
-.site-footer {
-  position: relative;
-}
-
 .site-footer .circle {
   color: #dbe8d4;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
-  position: fixed;
-  height: 300px;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
   width: 100%;
-  bottom: -220px;
   background-color: #2e3445;
 }
 
-/* 
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-*/
+/* resume page */
+.document-view {
+  width: 100%;
+  height: 75vh;
+}
+
+.main-content__container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 
 @media screen and (max-width: 595px) {
   .site-nav ul .nav-item a {
@@ -332,12 +333,6 @@ font-family: 'Titillium Web', sans-serif;
 
   .btn-group a {
     font-size: 14px;
-  }
-
-  .site-footer .circle {
-    font-size: 13px;
-    height: 200px;
-    bottom: -135px;
   }
 }
 

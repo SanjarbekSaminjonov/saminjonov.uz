@@ -252,14 +252,13 @@ main {
 /* resume page */
 .document-view {
   width: 100%;
-  height: 75vh;
+  height: 85vh;
 }
 
 .main-content__container {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 
 @media screen and (max-width: 595px) {
   .site-nav ul .nav-item a {

@@ -7,4 +7,4 @@
 * Blog
 
 
-### [saminjonov.uz](https://saminjonov.uz)
+### Click [saminjonov.uz](https://saminjonov.uz)

@@ -23,6 +23,10 @@ body {
 ul {
   margin: 0;
   padding: 0;
+}
+
+
+.list-style-none {
   list-style: none;
 }
 
@@ -249,16 +253,26 @@ main {
   background-color: #2e3445;
 }
 
-/* resume page */
-.document-view {
-  width: 100%;
-  padding: 30px 20px 10px;
-  background-color: #fff;
+.main-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #eee;
+  letter-spacing: 3px;
+  text-align: center;
 }
 
 .main-content__container {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+/* resume page */
+.document-view {
+  width: 100%;
+  padding: 30px 20px 10px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 595px) {
@@ -333,6 +347,14 @@ main {
 
   .btn-group a {
     font-size: 14px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .document-view {
+    padding: 4px;
   }
 }
 

@@ -20,16 +20,13 @@ body {
   background-color: #252b38;
 }
 
-ul {
+.list-style-none {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.list-style-none {
-  list-style: none;
-}
-
-a {
+.a {
   text-decoration: none;
   color: #000;
 }
@@ -229,9 +226,14 @@ main {
   margin-left: 15px;
 }
 
-.btn-group .blog-link:hover,
+.btn-group .blog-link:hover {
+  color: #1e90ff;
+  background-color: #252b38;
+}
+
 .btn-group .portfolio-link:hover {
-  opacity: 0.9;
+  background-color: #1e90ff;
+  color: #fff;
 }
 
 .btn-group .blog-link:active,
